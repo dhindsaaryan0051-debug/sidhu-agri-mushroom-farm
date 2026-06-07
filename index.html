@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sidhu Agri Mushroom Farm</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8faf7;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(8px);
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8bc34a;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.tagline{
+    color:#9be15d;
+    font-size:1.2rem;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#388e3c;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:50px;
+    color:#2e7d32;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    font-size:1.1rem;
+}
+
+.product-card{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.product-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.product-content{
+    padding:30px;
+    text-align:center;
+}
+
+.product-content h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#1b1b1b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+nav{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo"> SidhuAgri Farm</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#product">Product</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="tagline">
+A NEW ERA OF SUSTAINABLE AGRICULTURE
+</div>
+
+<h1>Where innovation meets agriculture</h1>
+
+<p>
+Freshly harvested, naturally grown, and delivered with quality you can trust.
+</p>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Our Farm</h2>
+
+<div class="about">
+
+<p>
+At SidhuAgri Mushroom Farm, we are committed to producing fresh,
+high-quality button mushrooms using sustainable agricultural practices.
+Our goal is to provide nutritious mushrooms while contributing to a greener
+and more environmentally responsible future.
+</p>
+
+</div>
+
+</section>
+
+<section id="product">
+
+<h2 class="section-title">Our Product</h2>
+
+<div class="product-card">
+
+<img src="images/mushroom-bg.jpg" alt="Button Mushroom">
+
+<div class="product-content">
+
+<h3>Fresh Button Mushrooms</h3>
+
+<p>
+Carefully cultivated and harvested daily. Perfect for homes,
+restaurants, hotels, supermarkets, and wholesale buyers.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<h2 class="section-title">Why Choose Us?</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>🌱 Sustainable Farming</h3>
+<p>Eco-friendly growing methods with minimal waste.</p>
+</div>
+
+<div class="feature-box">
+<h3>🍄 Daily Fresh Harvest</h3>
+<p>Fresh mushrooms harvested and packed every day.</p>
+</div>
+
+<div class="feature-box">
+<h3>🚚 Reliable Supply</h3>
+<p>Consistent quality for retail and wholesale customers.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<p><strong>Phone:</strong> +91 98893 00055</p>
+
+<p><strong>Email:</strong> adeshpartap812@gmail.com</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/919889300055">
+WhatsApp Us
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Punjab Button Mushroom Farm | A New Era of Sustainable Agriculture
+
+</footer>
+
+</body>
+</html>
